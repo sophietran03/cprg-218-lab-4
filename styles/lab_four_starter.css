@@ -1,29 +1,16 @@
 .hero-container {
-  background-color: #403d58;
-  color: #fff;
   height: 100vh;
 }
 
-body, html {
-  height: 100%;
-}
-
-/* The hero image */
 .hero-image {
-/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
-
-/* Set a specific height */
-height: 50%;
-
-/* Position and center the image to scale nicely on all screens */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Flower\ Shop.jpg");
+height: 90%;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
 }
 
-/* Place text in the middle of the image */
 .hero-text {
 text-align: center;
 position: absolute;
