@@ -1,10 +1,10 @@
 .hero-container {
-  height: 100vh;
+  height: 80vh;
 }
 
 .hero-image {
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Flower\ Shop.jpg");
-height: 90%;
+height: 100%;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -21,19 +21,140 @@ color: white;
 }
 
 .content-container {
-  background-color: #dbd56e;
-  height: 600px;
+  height: 640px;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.content-btn {
+  background-color: #da6989;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.content-btn:hover {
+  background-color: #c93a63;
+}
+
+.image {
+  flex: 1;
+
+  img {
+    max-width: 90%;
+  }
 }
 
 .accordion-container {
-  background-color: #fc7753;
-  color: #fff;
-  height: 600px;
+  height: 500px;
+}
+
+.accordion {
+  background-color: #f7f0f2;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #f1b3c3;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
 }
 
 .footer-container {
-  background-color: #f2efea;
+  padding: 30px;
+  background-color: #282828;
+  color: white;
+  text-align: center;
+}
+
+.footer-container div {
+  margin: 0 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-container ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-container ul a:hover {
+  opacity: 1;
+}
+
+.footer-container .footer-social-media {
+  text-align: center;
+  display: inline-block;
   width: 100%;
-  height: 300px;
-  position: relative;
+  clear: both;
+}
+
+.footer-container .footer-social-media > a {
+  font-size: 27px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+  margin-top: 30px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-container .footer-social-media > a:hover {
+  opacity:0.9;
+}
+
+.footer-copyright {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  clear: both;
 }
