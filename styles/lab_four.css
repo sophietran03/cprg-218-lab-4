@@ -1,9 +1,9 @@
-.hero-container {
-  height: 80vh;
+  .hero-container {
+  height: 500px;
 }
 
 .hero-image {
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Flower\ Shop.jpg");
+background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/FlowerShop.jpg");
 height: 100%;
 background-position: center;
 background-repeat: no-repeat;
@@ -21,7 +21,7 @@ color: white;
 }
 
 .content-container {
-  height: 640px;
+  height: auto;
 }
 
 .content-wrapper {
@@ -37,7 +37,7 @@ color: white;
 }
 
 .content-btn {
-  background-color: #da6989;
+  background-color: #1d36a5;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -52,24 +52,25 @@ color: white;
 }
 
 .content-btn:hover {
-  background-color: #c93a63;
+  background-color: #02166e;
 }
 
 .image {
   flex: 1;
 
   img {
-    max-width: 90%;
+    max-width: 100%;
+    height: auto;
   }
 }
 
 .accordion-container {
-  height: 500px;
+  height: auto;
 }
 
 .accordion {
-  background-color: #f7f0f2;
-  color: #444;
+  background-color: #f3f5ff;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -80,7 +81,7 @@ color: white;
 }
 
 .active, .accordion:hover {
-  background-color: #f1b3c3;
+  background-color: #ededed;
 }
 
 .panel {
@@ -94,7 +95,7 @@ color: white;
 .accordion:after {
   content: '\02795';
   font-size: 13px;
-  color: #777;
+  color: black;
   float: right;
   margin-left: 5px;
 }
@@ -149,7 +150,7 @@ color: white;
 }
 
 .footer-container .footer-social-media > a:hover {
-  opacity:0.9;
+  opacity: 0.9;
 }
 
 .footer-copyright {
@@ -157,4 +158,35 @@ color: white;
   display: inline-block;
   width: 100%;
   clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    height: 300px;
+  }
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .content-btn {
+    margin-bottom: 30px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-map iframe {
+    width: 100%;
+    height: auto;
+    border: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  p, a {
+    font-size: 1.1rem;
+  }
 }
